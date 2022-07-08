@@ -1,0 +1,54 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    color: #000000;
+    overflow-x: hidden;
+    ::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f2f1ec;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #000;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #000;
+    }
+
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 2px;
+}
+::-webkit-scrollbar-track {
+    background: #f2f1ec;
+}
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+footer {
+    margin-top: auto;
+}
+.container {
+    max-width: 1320px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+svg.icon{
+    width: 20px;
+    height: 20px;
+    fill: #000;
+    cursor: pointer;
+}

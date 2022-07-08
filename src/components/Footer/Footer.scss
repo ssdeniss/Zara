@@ -1,0 +1,24 @@
+.footer {
+    height: 120px;
+    border-top: 1px solid #000;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo img {
+        width: 200px;
+        cursor: pointer;
+    }
+    &__social {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    &__motto{
+        font-size: 34px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+}

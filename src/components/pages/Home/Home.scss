@@ -1,0 +1,223 @@
+.home {
+    padding: 80px 0;
+    &__top {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+    &__select-women {
+        filter: grayscale(30%);
+        background-image: url(../../../assets/pictures/home-select1.jpg);
+        height: 800px;
+        width: 600px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: all 1s linear;
+            background: rgba(0, 0, 0, 0.2);
+            opacity: 0;
+        }
+        &:hover::after {
+            opacity: 1;
+            transition: all 0.5s linear;
+        }
+        &:hover{
+            .home__top-btn{
+                
+                    span:nth-child(1) {
+                        transform: scaleX(1);
+                        transform-origin: left;
+                        transition-delay: 0s;
+                    }
+                    span:nth-child(2) {
+                        transform: scaleX(1);
+                        transform-origin: top;
+                        transition-delay: 0.4s;
+                    }
+                    span:nth-child(3) {
+                        transform: scaleX(1);
+                        transform-origin: right;
+                        transition-delay: 0.8s;
+                    }
+                    span:nth-child(4) {
+                        transform: scaleX(1);
+                        transform-origin: bottom;
+                        transition-delay: 1.2s;
+                    }
+                
+            }
+        }
+    }
+    &__select-men {
+        filter: grayscale(30%);
+        background-image: url(../../../assets/pictures/home-select2.jpg);
+        height: 800px;
+        width: 600px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: all 1s linear;
+            background: rgba(0, 0, 0, 0.2);
+            opacity: 0;
+        }
+        &:hover::after {
+            opacity: 1;
+            transition: all 0.5s linear;
+        }
+        &:hover{
+            .home__top-btn{
+                
+                    span:nth-child(1) {
+                        transform: scaleX(1);
+                        transform-origin: left;
+                        transition-delay: 0s;
+                    }
+                    span:nth-child(2) {
+                        transform: scaleX(1);
+                        transform-origin: top;
+                        transition-delay: 0.4s;
+                    }
+                    span:nth-child(3) {
+                        transform: scaleX(1);
+                        transform-origin: right;
+                        transition-delay: 0.8s;
+                    }
+                    span:nth-child(4) {
+                        transform: scaleX(1);
+                        transform-origin: bottom;
+                        transition-delay: 1.2s;
+                    }
+                
+            }
+        }
+    }
+    &__top-btn {
+        position: relative;
+        display: inline-block;
+        span {
+            border-radius: 10px;
+            position: absolute;
+            display: block;
+            background: #000;
+            transition: transform ease-in-out 0.5s;
+        }
+        span:nth-child(1) {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition-delay: 0s;
+            transition: transform ease-in-out 0.5s;
+        }
+        span:nth-child(2) {
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            transform: scaleY(0);
+            transform-origin: bottom;
+            transition-delay: 0.4s;
+            transition: transform ease-in-out 0.5s;
+        }
+        span:nth-child(3) {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition-delay: 0.8s;
+            transition: transform ease-in-out 0.5s;
+        }
+        span:nth-child(4) {
+            bottom: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition-delay: 1.2s;
+            transition: transform ease-in-out 0.5s;
+        }
+    }
+    &__top-btn {
+        font-size: 38px;
+        width: 180px;
+        height: 80px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+        text-transform: uppercase;
+    }
+    &__category {
+        margin: 80px 0;
+    }
+    &__category-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    &__category-title {
+        font-size: 24px;
+        font-weight: 500;
+    }
+    &__category-filters {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+    &__category-filter {
+        position: relative;
+        line-height: 20px;
+        cursor: pointer;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            background: #000;
+            transition: all 0.5s linear;
+        }
+        &:hover::after {
+            width: 100%;
+            transition: all 0.5s linear;
+        }
+    }
+    &__category-products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+    }
+    &__category-product {
+        height: 400px;
+        width: 100%;
+        background: #ddd;
+    }
+}

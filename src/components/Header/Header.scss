@@ -1,0 +1,44 @@
+.header {
+    height: 80px;
+    font-weight: 500;
+    background: #fff;
+    border-bottom: 1px solid #000;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo img {
+        width: 120px;
+        cursor: pointer;
+    }
+    &__navigation {
+        display: flex;
+        gap: 50px;
+    }
+    &__navigation-link {
+        font-size: 18px;
+        line-height: 24px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            background: #000;
+            transition: all 0.3s linear;
+        }
+        &:hover::after {
+            width: 100%;
+            transition: all 0.3s linear;
+        }
+    }
+    &__btns {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+}
